@@ -1,7 +1,10 @@
 {
   "name": "console-iptv",
   "version": "1.0.0",
-  "description": "",
+  "description": "4v3ngR",
+  "bin": {
+    "console-iptv": "./index.js"
+  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
