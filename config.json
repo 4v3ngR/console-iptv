@@ -1,0 +1,8 @@
+{
+	"m3u8": "http://example.com/playlist",
+	"xmltv": "http://example.com/xmltv",
+	"groupFilter": "(Local News|Music|News|Classic)",
+	"channelFilter": "(Example 1)",
+	"excludedChannelIds": [
+	]
+}
