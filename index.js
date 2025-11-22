@@ -32,10 +32,6 @@
 					}
 				}
 			});
-		// }
-
-		// assign the workers to the tasks
-		// for (let task of tasks) {
 			workers[task].send({ task });
 		}
 	} else {
