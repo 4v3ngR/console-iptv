@@ -148,11 +148,11 @@
 			style: {
 				item: {
 					hover: {
-						bg: 'blue'
+						inverse: true
 					}
 				},
 				selected: {
-					bg: 'blue',
+					inverse: true,
 					bold: true
 				}
 			}
