@@ -21,7 +21,7 @@
 			}
 
 			if (excluded) {
-				if (item.tvg?.id && excluded.includes(item.tvg.id)) {
+				if (item.tvg?.id && Object.keys(excluded).includes(item.tvg.id)) {
 					return false;
 				}
 			}

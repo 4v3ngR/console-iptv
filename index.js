@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-	
+
 (function() {
 	const cluster = require('cluster');
 	const path = require('path');
@@ -32,6 +32,10 @@
 					}
 				}
 			});
+		// }
+
+		// assign the workers to the tasks
+		// for (let task of tasks) {
 			workers[task].send({ task });
 		}
 	} else {

@@ -13,9 +13,9 @@
 
 	screen.key('x', () => {
 		if (selectedEntry) {
-			const { tvg } = selectedEntry;
+			const { name, tvg } = selectedEntry;
 			const id = tvg?.id;
-			if (id) config.addExcludedChannelId(id);
+			if (id) config.addExcludedChannelId(id, name);
 		}
 	});
 
@@ -57,6 +57,7 @@
 		for (let program of programs) {
 			if (id === program.channel) {
 				if (currTime < program.stop) {
+					currTime = program.stop; // remove duplicates
 					shows.push({
 						name: unescapeString(program.title[0]?.value || ''),
 						start: formatDate(program.start),
